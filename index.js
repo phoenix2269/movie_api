@@ -47,7 +47,7 @@ let movies = [
         "Description": "John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.",
         "Genre": {
             "Name": "Action",
-            "Description": ""
+            "Description": "Lad crimp bilge Jolly Roger Spanish Main Cat o'nine tails Admiral of the Black long clothes walk the plank landlubber or just lubber. Topmast red ensign long clothes pirate spyglass crimp killick nipperkin barkadeer Buccaneer. To go on account brig Barbary Coast black spot reef sails topmast American Main stern sheet heave down."
         },
         "Director": {
             "Name": "Chad Stahelski",
@@ -61,8 +61,8 @@ let movies = [
         "Title": "Everything Everywhere All at Once",
         "Description": "A middle-aged Chinese immigrant is swept up into an insane adventure in which she alone can save existence by exploring other universes and connecting with the lives she could have led.",
         "Genre": {
-            "Name": "",
-            "Description": "Comedy"
+            "Name": "Comedy",
+            "Description": "Hempen halter lugger strike colors red ensign gibbet Arr scurvy keel American Main bilge water. Grog lateen sail take a caulk skysail hail-shot nipper main sheet grog blossom coffer spyglass. Booty sutler fluke stern Cat o'nine tails bucko trysail pink run a rig long boat."
         },
         "Director": {
             "Name": "Daniel Kwan",
@@ -77,7 +77,7 @@ let movies = [
         "Description": "In the next installment, the survivors of the Ghostface killings leave Woodsboro behind and start a fresh chapter in New York City.",
         "Genre": {
             "Name": "Horror",
-            "Description": ""
+            "Description": "Transom gibbet matey chase guns run a rig Jack Ketch interloper broadside man-of-war pink. Yo-ho-ho jolly boat jury mast smartly provost parley hands aye bucko bounty. Davy Jones' Locker jolly boat Blimey gally carouser draught lugsail hang the jib pinnace bilge rat."
         },
         "Director": {
             "Name": "Matt Bettinelli-Olpin",
@@ -92,7 +92,7 @@ let movies = [
         "Description": "The film stars Brendan Fraser, Sadie Sink, Hong Chau, Ty Simpkins, and Samantha Morton. The plot follows a reclusive, morbidly obese English teacher who tries to restore his relationship with his teenage daughter",
         "Genre": {
             "Name": "Drama",
-            "Description": ""
+            "Description": "Man-of-war walk the plank poop deck rutters fire ship broadside gaff red ensign log Cat o'nine tails. Boom brig Jolly Roger long clothes plunder overhaul salmagundi topmast prow wherry. Belaying pin Jack Ketch holystone scuttle heave to killick chandler topmast league long boat."
         },
         "Director": {
             "Name": "Darren Aronofsky",
@@ -106,8 +106,8 @@ let movies = [
         "Title": "Cocaine Bear",
         "Description": "An oddball group of cops, criminals, tourists and teens converge on a Georgia forest where a huge black bear goes on a murderous rampage after unintentionally ingesting cocaine.",
         "Genre": {
-            "Name": "",
-            "Description": "Thriller"
+            "Name": "Thriller",
+            "Description": "Ahoy boom bilge water cog Arr gaff crimp chandler dance the hempen jig line. Mizzenmast bowsprit gally lee Nelsons folly sloop fire in the hole run a shot across the bow spyglass coffer. Pirate Round landlubber or just lubber grog chandler case shot aft bring a spring upon her cable no prey, no pay hands long clothes."
         },
         "Director": {
             "Name": "Elizabeth Banks",
