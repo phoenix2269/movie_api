@@ -64,28 +64,80 @@
                         <td>/movies</td>
                         <td>GET</td>
                         <td>None</td>
-                        <td>A JSON object holding data about all the movies</td>
+                        <td>A JSON object holding data about all the movies, structured like:
+                            {<br>
+                                "Genre": {<br>
+                                    "Name": "Action",<br>
+                                    "Description": "While action has long been a recurring component in films, the action film genre began to develop in the 1970s along with the increase of stunts and special effects."<br>
+                                },<br>
+                                "Director": {<br>
+                                    "Name": "Chad Stahelski",<br>
+                                    "Bio": "Chad Stahelski is an American stuntman and film director. He is known for directing the 2014 film John Wick and its three sequels. He has worked as a stuntman, stunt coordinator and second unit director on several films.",<br>
+                                    "Birth": "1968",<br>
+                                    "Death": ""<br>
+                                },<br>
+                                "_id": "6427a81da980ad4336509c99",<br>
+                                "Title": "John Wick: Chapter 4",<br>
+                                "Description": "John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.",<br>
+                                "ImagePath": "https://m.media-amazon.com/images/M/MV5BMDExZGMyOTMtMDgyYi00NGIwLWJhMTEtOTdkZGFjNmZiMTEwXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_Ratio0.6716_AL_.jpg",<br>
+                                "ReleaseYear": "2023",<br>
+                                "RottenTomatoes": "94",<br>
+                                "Featured": true<br>
+                            }<br>
+                        </td>
                     </tr>
                     <tr>
                         <td>Get movie details by Title</td>
                         <td>/movies/:title</td>
                         <td>GET</td>
                         <td>None</td>
-                        <td>A JSON object holding data about a single movie</td>
+                        <td>A JSON object holding data about a single movie, structured like:<br>
+                            {<br>
+                                "Genre": {<br>
+                                    "Name": "Action",<br>
+                                    "Description": "While action has long been a recurring component in films, the action film genre began to develop in the 1970s along with the increase of stunts and special effects."<br>
+                                },<br>
+                                "Director": {<br>
+                                    "Name": "Chad Stahelski",<br>
+                                    "Bio": "Chad Stahelski is an American stuntman and film director. He is known for directing the 2014 film John Wick and its three sequels. He has worked as a stuntman, stunt coordinator and second unit director on several films.",<br>
+                                    "Birth": "1968",<br>
+                                    "Death": ""<br>
+                                },<br>
+                                "_id": "6427a81da980ad4336509c99",<br>
+                                "Title": "John Wick: Chapter 4",<br>
+                                "Description": "John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.",<br>
+                                "ImagePath": "https://m.media-amazon.com/images/M/MV5BMDExZGMyOTMtMDgyYi00NGIwLWJhMTEtOTdkZGFjNmZiMTEwXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_Ratio0.6716_AL_.jpg",<br>
+                                "ReleaseYear": "2023",<br>
+                                "RottenTomatoes": "94",<br>
+                                "Featured": true<br>
+                            }<br>
+                        </td>
                     </tr>
                     <tr>
                         <td>Get genre by name</td>
                         <td>/movies/genre/:name</td>
                         <td>GET</td>
                         <td>None</td>
-                        <td>A JSON object holding data about a specific genre</td>
+                        <td>A JSON object holding data about a specific genre, structured like:<br>
+                            {<br>
+                                "Name": "Action",<br>
+                                "Description": "While action has long been a recurring component in films, the action film genre began to develop in the 1970s along with the increase of stunts and special effects."<br>
+                            }<br>
+                        </td>
                     </tr>
                     <tr>
                         <td>Get director by name</td>
                         <td>/movies/directors/:name</td>
                         <td>GET</td>
                         <td>None</td>
-                        <td>A JSON object holding data about a director</td>
+                        <td>A JSON object holding data about a director, structured like:<br>
+                            {<br>
+                                "Name": "Elizabeth Banks",<br>
+                                "Bio": "Elizabeth Banks is an American actress and filmmaker. She is known for playing Effie Trinket in The Hunger Games film series and Gail Abernathy-McKadden in the Pitch Perfect film series.",<br>
+                                "Birth": "1974",<br>
+                                "Death": ""<br>
+                            }<br>
+                        </td>
                     </tr>
                     <tr>
                         <td>Create new user</td>
