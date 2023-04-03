@@ -213,11 +213,6 @@ app.delete('/users/:Username', (req, res) => {
     });
 });
 
-// API documentation/how to
-// app.get('/documentation.html', (req, res) => {
-//     res.send('Top 10 Movies');
-// });
-
 // Listener
 app.listen(8080, () => {
     console.log('App is listening on port 8080.');
