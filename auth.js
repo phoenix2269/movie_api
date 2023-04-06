@@ -38,11 +38,11 @@ module.exports = (router) => {
         })(req, res);
     });
 
-/*     router.get('/test', passport.authenticate('jwt', { session: false }), (req, res) =>{
+    router.get('/test', passport.authenticate('jwt', { session: false }), (req, res) =>{
         const response = {
             success: true,
         };
     
         return res.status(200).json(response);
-    }); */
+    });
 }
