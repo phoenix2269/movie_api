@@ -11,10 +11,10 @@ passport.use(new LocalStrategy({
     usernameField: 'Username',
     passwordField: 'Password'
 }, (username, password, callback) => {
-    console.log(username + '  ' + password);
+//    console.log(username + '  ' + password);
     Users.findOne({ Username: username})
         .then((user) => {
-            if (user) {
+            if (user.validatePassword(password)) {  // No need to check for user since validatePassword will fail if the user doesn't exist
                 console.log('finished');
                 return callback(null, user);
             } else {
