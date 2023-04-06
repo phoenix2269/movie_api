@@ -1,10 +1,11 @@
 const mongoose = require('mongoose');
-// const Models = require('./models.js');
 
 // const Movies = Models.Movie;
 // const Users = Models.User;
 
 // mongoose.connect('mongodb://localhost:27017/movies', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://127.0.0.1:27017/movies', { useNewUrlParser: true, useUnifiedTopology: true });
+
 
 let movieSchema = mongoose.Schema({
     Title: {type: String, required: true},
