@@ -55,7 +55,9 @@ app.use((err, req, res, next) => {
     res.status(500).send('Something broke!');
 });
 
-
+app.get('/', (req, res) => {
+    res.send('Welcome to MyFlix API');
+})
 
 // GET list of ALL movies
 app.get('/movies', passport.authenticate('jwt', { session: false }), (req, res) => {
@@ -267,6 +269,10 @@ app.delete('/users/:Username', passport.authenticate('jwt', { session: false }),
         console.err(err);
         res.status(500).send('Error: ' + err);
     });
+});
+
+app.get('/documentation', (req, res) => {
+    res.sendFile('public/documentation.html', { root: __dirname });
 });
 
 // Listener
