@@ -1,4 +1,4 @@
-# myFlix App
+# myFlix Movie API App
 
 myFlix/movie_api Frontend using React
 Added Build Tool using Parcel
