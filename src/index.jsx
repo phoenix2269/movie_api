@@ -1,4 +1,5 @@
 import { createRoot } from 'react-dom/client';
+import React from 'react';
 
 // Import statement to indicate that you need to bundle `./index.scss`
 import "./index.scss";
@@ -6,7 +7,7 @@ import "./index.scss";
 // Main component (will eventually use all the others)
 const MyFlixApplication = () => {
     return (
-        <div classname="my-flix">
+        <div className="my-flix">
         <div>Good Morning!</div>
         </div>
     );
