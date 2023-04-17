@@ -2933,16 +2933,10 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 // Import statement to indicate that you need to bundle `./index.scss`
 var _indexScss = require("./index.scss");
 // Main component (will eventually use all the others)
-/* const MyFlixApplication = () => {
-    return (
-        <div className="my-flix">
-            <div>Good Morning!</div>
-        </div>
-    );
-}; */ const App = ()=>{
+const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _mainView.MainView), {}, void 0, false, {
         fileName: "src/index.jsx",
-        lineNumber: 17,
+        lineNumber: 10,
         columnNumber: 12
     }, undefined);
 };
@@ -2953,9 +2947,9 @@ const root = (0, _client.createRoot)(container);
 // Tells React to render your app in the rooot DOM element
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
     fileName: "src/index.jsx",
-    lineNumber: 25,
+    lineNumber: 18,
     columnNumber: 13
-}, undefined)); // root.render(<MyFlixApplication />);
+}, undefined));
 var _c;
 $RefreshReg$(_c, "App");
 
