@@ -23,17 +23,17 @@ export const MainView = () => {
         })
             .then((response) => response.json())
             .then((movies) => {
-                setMovies(movies);
-/*                 const moviesFromApi = data.items.map((item) => {
+//                setMovies(movies);
+                const moviesFromApi = movies.map((item) => {
                     return {
-                    id: item.id,
-                    title: item.title,
-                    image: item.image,
-                    year: item.year,
-                    rating: item.imDbRating
+                    id: item._id,
+                    title: item.Title,
+                    image: item.ImagePath,
+                    year: item.ReleaseYear,
+                    rating: item.RottenTomatoes
                     };
                 });
-                setMovies(moviesFromApi); */
+                setMovies(moviesFromApi);
             });
     }, [token]);
 
