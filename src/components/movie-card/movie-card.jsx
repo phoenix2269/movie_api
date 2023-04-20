@@ -1,3 +1,4 @@
+// Adding a comment to make sure things are fixed
 import PropTypes from 'prop-types';
 
 export const MovieCard = ({ movie, onMovieClick }) => {
