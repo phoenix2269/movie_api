@@ -13,7 +13,6 @@ export const LoginView = ({ onLoggedIn }) => {
 
         fetch("https://movie-api-cf.herokuapp.com/login", {
             method: "POST",
-            mode: "no-cors",
             headers: {
                 "Content-Type": "application/json"
             },
