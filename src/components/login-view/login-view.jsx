@@ -14,14 +14,14 @@ export const LoginView = ({ onLoggedIn }) => {
         fetch("https://movie-api-cf.herokuapp.com/login", {
             method: "POST",
             headers: {
-                "Content-Type": "application.json"
+                "Content-Type": "application/json"
             },
             body: JSON.stringify(data)
         })
         .then ((response) => response.json())
         .then((data) => {
-            console.log("Login response: ", data);
-            console.log("User: ", data.user);
+//            console.log("Login response: ", data);
+//            console.log("User: ", data.user);
             if (data.user) {
                 localStorage.setItem("user", JSON.stringify(data.user));
                 localStorage.setItem("token", data.token);
