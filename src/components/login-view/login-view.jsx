@@ -21,6 +21,7 @@ export const LoginView = ({ onLoggedIn }) => {
         .then ((response) => response.json())
         .then((data) => {
             console.log("Login response: ", data);
+            console.log("User: ", data.user);
             if (data.user) {
                 localStorage.setItem("user", JSON.stringify(data.user));
                 localStorage.setItem("token", data.token);
@@ -43,7 +44,7 @@ export const LoginView = ({ onLoggedIn }) => {
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
                     required
-                    minlength="3"
+                    minLength="3"
                 />
             </label>
             <label>
