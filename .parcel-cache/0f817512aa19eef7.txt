@@ -14,7 +14,7 @@
 110C:\Users\david\Documents\Career Foundry Course\Full-Stack Immersion\movie_api\node_modules\readdirp\index.d.ts133264237235286015 0
 88C:\Users\david\Documents\Career Foundry Course\Full-Stack Immersion\movie_api\.gitignore133264774695377096 0
 173C:\Users\david\Documents\Career Foundry Course\Full-Stack Immersion\movie_api\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\plugins\removeAttributesBySelector.js133264237258976283 0
-85C:\Users\david\Documents\Career Foundry Course\Full-Stack Immersion\movie_api\auth.js133264774699613219 0
+85C:\Users\david\Documents\Career Foundry Course\Full-Stack Immersion\movie_api\auth.js133264793153373686 0
 117C:\Users\david\Documents\Career Foundry Course\Full-Stack Immersion\movie_api\node_modules\parent-module\package.json133264237226254668 0
 82C:\Users\david\Documents\Career Foundry Course\Full-Stack Immersion\movie_api\dist133264774699816106 1
 133C:\Users\david\Documents\Career Foundry Course\Full-Stack Immersion\movie_api\node_modules\css-tree\cjs\utils\create-custom-error.cjs133264237251115417 0
