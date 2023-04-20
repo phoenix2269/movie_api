@@ -15,11 +15,11 @@ const app = express();
 
 app.use(bodyParser.json());
 
-//const cors = require('cors');
+const cors = require('cors');
 //app.use(cors()); // Allows requests from ALL origins
 
 // Specifies Allowed Origins
-/* let allowedOrigins = ['http://localhost:8080', 'http://testsite.com'];
+let allowedOrigins = ['http://localhost:1234', 'http://testsite.com'];
 
 app.use(cors({
   origin: (origin, callback) => {
@@ -30,7 +30,7 @@ app.use(cors({
     }
     return callback(null, true);
   }
-})); */
+}));
 
 let auth = require('./auth')(app);
 const passport = require('passport');
