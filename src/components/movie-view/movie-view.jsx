@@ -1,3 +1,4 @@
+// Adding a comment to make sure things are fixed
 export const MovieView = ({ movie, onBackClick }) => {
     return (
         <div>

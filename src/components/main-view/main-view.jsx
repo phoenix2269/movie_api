@@ -1,3 +1,4 @@
+// Adding a comment to make sure things are fixed
 import { useEffect, useState } from 'react';
 import { MovieCard } from '../movie-card/movie-card';
 import { MovieView } from '../movie-view/movie-view';

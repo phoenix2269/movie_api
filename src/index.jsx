@@ -1,3 +1,4 @@
+// Adding a comment to make sure things are fixed
 import { createRoot } from 'react-dom/client';
 import { MainView } from './components/main-view/main-view';
 //import React from 'react';
