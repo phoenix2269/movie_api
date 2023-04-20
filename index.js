@@ -15,8 +15,8 @@ const app = express();
 
 app.use(bodyParser.json());
 
-const cors = require('cors');
-app.use(cors()); // Allows requests from ALL origins
+//const cors = require('cors');
+//app.use(cors()); // Allows requests from ALL origins
 
 // Specifies Allowed Origins
 /* let allowedOrigins = ['http://localhost:8080', 'http://testsite.com'];
