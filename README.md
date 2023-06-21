@@ -1,6 +1,6 @@
 # movie_api
 
-Postman Documentation link - https://documenter.getpostman.com/view/27058357/2s93Y5NzSU
+Routes Documentation link - https://documenter.getpostman.com/view/27058357/2s93Y5NzSU
 
 Hosting Link - https://movie-api-cf.herokuapp.com/
 
