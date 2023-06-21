@@ -1,12 +1,14 @@
 $color: steelblue;
 
+@import "~bootstrap/scss/bootstrap.scss";
+
 .my-flix {
     color: $color;
 }
 
-img {
+/* img {
     min-height: 10%;
     min-width: 10%;
     max-height: 30%;
     max-width: 30%;
-}
+} */
