@@ -1,2 +1,4 @@
 #project dependencies
 node_modules
+.cache
+.parcel-cache
