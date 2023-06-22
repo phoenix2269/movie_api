@@ -1,10 +1,16 @@
+import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
+import './movie-view.scss';
 
+export const MovieView = ({ movies }) => {
+    const { movieId } = useParams();
+    const movie = movies.find((b) => b.id === movieId);
 
-export const MovieView = ({ movie, onBackClick }) => {
     return (
         <div>
             <div>
-                <img src={movie.image} />
+                <img className="w-100" src={movie.image} />
             </div>
             <div>
                 <span>Title: </span>
@@ -14,15 +20,13 @@ export const MovieView = ({ movie, onBackClick }) => {
                 <span>Release Year: </span>
                 <span>{movie.year}</span>
             </div>
-            {/* <div>
-                <span>Director: </span>
-                <span>{movie.director}</span>
-            </div> */}
             <div>
                 <span>Rating: </span>
                 <span>{movie.rating}</span>
             </div>
-            <button onClick={onBackClick}>Back</button>
+            <Link to={"/"}>
+                <Button className="back=button">Back</Button>
+            </Link>
         </div>
     );
 };
