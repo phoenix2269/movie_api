@@ -242,9 +242,10 @@ app.post('/users/:Username/movies/:MovieID', passport.authenticate('jwt', { sess
 });
 
 // DELETE/Remove a movie from favorites - show deleted msg
+// Corrected code to use findOneAndUpdate instead of findOneAndDelete and changed "push" to "pull"
 app.delete('/users/:Username/movies/:MovieID', passport.authenticate('jwt', { session: false }), (req, res) => {
-    Users.findOneAndDelete({ Username: req.params.Username }, {
-        $push: { FavoriteMovies: req.params.MovieID }
+    Users.findOneAndUpdate({ Username: req.params.Username }, {
+        $pull: { FavoriteMovies: req.params.MovieID }
     },
     { new: true })  // This line makes sure that the updated document is returned
     .then((updatedUser) => {
