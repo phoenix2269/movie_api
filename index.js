@@ -243,7 +243,7 @@ app.post('/users/:Username/movies/:MovieID', passport.authenticate('jwt', { sess
 
 // DELETE/Remove a movie from favorites - show deleted msg
 app.delete('/users/:Username/movies/:MovieID', passport.authenticate('jwt', { session: false }), (req, res) => {
-    Users.findOneAndUpdate({ Username: req.params.Username }, {
+    Users.findOneAndRemove({ Username: req.params.Username }, {
         $pu11: { FavoriteMovies: req.params.MovieID }
     },
     { new: true })  // This line makes sure that the updated document is returned
