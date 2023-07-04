@@ -242,18 +242,38 @@ app.post('/users/:Username/movies/:MovieID', passport.authenticate('jwt', { sess
 });
 
 // DELETE/Remove a movie from favorites - show deleted msg
+// app.delete('/users/:Username/movies/:MovieID', passport.authenticate('jwt', { session: false }), (req, res) => {
+    // Users.findOneAndUpdate({ Username: req.params.Username }, {
+        // $pu11: { FavoriteMovies: req.params.MovieID }
+    // },
+    // { new: true })  // This line makes sure that the updated document is returned
+    // .then((updatedUser) => {
+        // res.json(updatedUser);
+    // })
+    // .catch((err) => {
+        // console.error(err);
+        // res.status(400).send('Error: ' + err);
+    // });
+// });
 app.delete('/users/:Username/movies/:MovieID', passport.authenticate('jwt', { session: false }), (req, res) => {
-    Users.findOneAndRemove({ Username: req.params.Username }, {
-        $pu11: { FavoriteMovies: req.params.MovieID }
-    },
-    { new: true })  // This line makes sure that the updated document is returned
-    .then((updatedUser) => {
-        res.json(updatedUser);
-    })
-    .catch((err) => {
-        console.error(err);
-        res.status(400).send('Error: ' + err);
-    });
+	Users.findOneAndUpdate(
+		{ Username: req.params.Username },
+		{
+			$pull: { FavoriteMovies: req.params.MovieID },
+		},
+		{ new: true }
+	)
+		.then((updatedUser) => {
+			if (!updatedUser) {
+				return res.status(404).send('Error: User not found');
+			} else {
+				res.json(updatedUser);
+			}
+		})
+		.catch((error) => {
+			console.error(error);
+			res.status(500).send('Error: ' + error);
+		});
 });
 
 // DELETE/Remove User by username
