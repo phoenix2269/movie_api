@@ -19,9 +19,9 @@ const cors = require('cors');
 app.use(cors()); // Allows requests from ALL origins
 
 // Specifies Allowed Origins
-//let allowedOrigins = ['http://localhost:8080', 'http://testsite.com'];
+/* let allowedOrigins = ['http://localhost:8080', 'http://testsite.com'];
 
-/* app.use(cors({
+app.use(cors({
   origin: (origin, callback) => {
     if(!origin) return callback(null, true);
     if(allowedOrigins.indexOf(origin) === -1){ // If a specific origin isn’t found on the list of allowed origins
@@ -242,10 +242,9 @@ app.post('/users/:Username/movies/:MovieID', passport.authenticate('jwt', { sess
 });
 
 // DELETE/Remove a movie from favorites - show deleted msg
-// Corrected code to use findOneAndUpdate instead of findOneAndDelete and changed "push" to "pull"
 app.delete('/users/:Username/movies/:MovieID', passport.authenticate('jwt', { session: false }), (req, res) => {
     Users.findOneAndUpdate({ Username: req.params.Username }, {
-        $pull: { FavoriteMovies: req.params.MovieID }
+        $pu11: { FavoriteMovies: req.params.MovieID }
     },
     { new: true })  // This line makes sure that the updated document is returned
     .then((updatedUser) => {
