@@ -277,11 +277,11 @@ app.delete('/users/:Username/movies/:MovieID', passport.authenticate('jwt', { se
 		// { new: true }
 	// )
 		// .then((updatedUser) => {
-			if (!updatedUser) {
-				return res.status(404).send('Error: User not found');
-			} else {
-				// res.json(updatedUser);
-			}
+			// if (!updatedUser) {
+				// return res.status(404).send('Error: User not found');
+			// } else {
+			//	res.json(updatedUser);
+			// }
 		// })
 		// .catch((error) => {
 			// console.error(error);
