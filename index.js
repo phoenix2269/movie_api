@@ -208,7 +208,7 @@ app.put('/users/:Username',
     }
 
 	let inputPassword = req.body.Password;
-	if (inputPassword.substr(0,4) === "$2b$" || inputPassword.substr(0,4) === "$2a$") {
+	if (inputPassword.slice(0,4) === "$2b$" || inputPassword.slice(0,4) === "$2a$") {
 		let hashedPassword = req.body.Password;
 	} else {
 		let hashedPassword = Users.hashPassword(req.body.Password);
