@@ -227,7 +227,7 @@ app.put('/users/:Username',
         res.json(updatedUser);
     })
     .catch((err) => {
-        console.error(err);
+        console.error("Update error:", err);
         res.status(500).send('Error: ' + err);
     });
 });
