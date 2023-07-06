@@ -207,12 +207,12 @@ app.put('/users/:Username',
         return res.status(422).json({ errors: errors.array() });
     }
 
-	let inputPassword = req.body.Password;
-	if (inputPassword.slice(0,4) === "$2b$" || inputPassword.slice(0,4) === "$2a$") {
-		let hashedPassword = req.body.Password;
-	} else {
+	// let inputPassword = req.body.Password;
+	// if (inputPassword.slice(0,4) === "$2b$" || inputPassword.slice(0,4) === "$2a$") {
+		// let hashedPassword = req.body.Password;
+	// } else {
 		let hashedPassword = Users.hashPassword(req.body.Password);
-	}
+	// }
 
     Users.findOneAndUpdate({ Username: req.params.Username }, {$set:
         {
