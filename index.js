@@ -207,7 +207,7 @@ app.put('/users/:Username',
         return res.status(422).json({ errors: errors.array() });
     }
 	
-	if (User.password === req.body.Password) {
+	if (Password === req.body.Password) {
 		let hashedPassword = req.body.Password;
 	} else {
         let hashedPassword = Users.hashPassword(req.body.Password);
