@@ -207,11 +207,11 @@ app.put('/users/:Username',
         return res.status(422).json({ errors: errors.array() });
     }
 	
-	// if (req.params.Username.substr(0,4) === "$2b$" || req.params.Username.substr(0,4) === "$2a$") {
-		// let hashedPassword = req.body.Password;
-	// } else {
+	if (req.body.Password.substr(0,4) === "$2b$" || req.body.Password.substr(0,4) === "$2a$") {
+		let hashedPassword = req.body.Password;
+	} else {
 		let hashedPassword = Users.hashPassword(req.body.Password);
-	// }
+	}
 
     Users.findOneAndUpdate({ Username: req.params.Username }, {$set:
         {
