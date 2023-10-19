@@ -1,9 +1,13 @@
-// Adding a comment to get VS to save as new copy
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import './movie-view.scss';
 
+/**
+ * MovieView
+ * @param - movies
+ * @return - movie details
+ */
 export const MovieView = ({ movies }) => {
     const { movieId } = useParams();
     const movie = movies.find((b) => b.id === movieId);

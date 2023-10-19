@@ -7,6 +7,12 @@ let Users = Models.User,
     JWTStrategy = passportJWT.Strategy,
     ExtractJWT = passportJWT.ExtractJwt;
 
+/**
+ * Passport function for User/password
+ * @param - Username
+ * @param - Password
+ * @return - result of login attempt
+ */
 passport.use(new LocalStrategy({
     usernameField: 'Username',
     passwordField: 'Password'
@@ -28,6 +34,11 @@ passport.use(new LocalStrategy({
         });
 }));
 
+/**
+ * Passport function for JWT
+ * @param - jwt
+ * @return - userID
+ */
 passport.use(new JWTStrategy({
         jwtFromRequest: ExtractJWT.fromAuthHeaderAsBearerToken(),
         secretOrKey: 'your_jwt_secret'

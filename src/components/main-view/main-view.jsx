@@ -9,6 +9,10 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
+/**
+ * MainView - /movies
+ * @return - list of all movies
+ */
 export const MainView = () => {
     const storedUser = JSON.parse(localStorage.getItem("user"));
     const storedToken = localStorage.getItem("token");

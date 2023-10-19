@@ -3,6 +3,11 @@ import PropTypes from 'prop-types';
 import { Button, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
+/**
+ * MovieCard - /movies/${encodeURIComponent(movie.id)}
+ * @param - movie
+ * @return - movie card data
+ */
 export const MovieCard = ({ movie }) => {
     return (
         <Card>

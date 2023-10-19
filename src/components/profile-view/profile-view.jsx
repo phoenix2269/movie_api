@@ -3,12 +3,16 @@ import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
+/**
+ * ProfileView
+ * @param - user
+ * @param - token
+ * @param - movies
+ * @param - onLoggedOut
+ * @param - updateUser
+ * @return - ProfileView
+ */
 export const ProfileView = ({ user, token, movies, onLoggedOut, updateUser }) => {
-    // const [username, setUsername] = useState("");
-    // const [password, setPassword] = useState("");
-    // const [email, setEmail] = useState("");
-    // const [birthday, setBirthday] = useState("");
-
     const [username, setUsername] = useState(user.Username ? user.Username : null);
     const [password, setPassword] = useState(user.Password ? user.Password : null);
     const [email, setEmail] = useState(user.Email ? user.Email : null);
